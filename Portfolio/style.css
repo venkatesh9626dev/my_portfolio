@@ -1,0 +1,553 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --FONT-COLOR:crimson; 
+    --SKILLS-BG-COLOR :  rgba(128, 140, 152, 0.505);
+    --SCROLL-SIZE : 80px;
+    --SECTION-PADDING :0px 20px 20px 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 3.0rem;
+}
+h2{
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+p{
+    word-spacing: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+ul li{
+    list-style-type: none;
+}
+.opacity-grow-2{
+    opacity: 1 !important;
+    transform: translate(0,20px) !important;
+    transition: opacity 1s,transform 1s !important;
+}
+body{
+    color: white;
+    background-color: black;
+}
+
+/* header section */
+
+header{
+    display: flex;
+    padding: 10px 10px 10px 5%;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+.head-container  h1::first-letter{
+    font-size: 2.5rem;
+    color: var(--FONT-COLOR);
+}
+#hamburger{
+    align-self: center;
+}
+#hamburger:hover{
+    cursor: pointer;
+    color: var(--FONT-COLOR);
+}
+#nav-items{
+    align-items: center;
+    display: none;
+    
+  
+}
+
+
+
+ .nav-phone{
+    
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 40vw;
+    background-color:var(--FONT-COLOR);
+    cursor: pointer;
+}
+.nav-phone a{
+    display: inline-block;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    
+} 
+.nav-phone a:hover{
+    border-bottom: 2px solid white;
+}
+
+.close_btn{
+    padding: 8px;
+    border: 2px solid rgb(255, 252, 252);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    margin: 20px 10%;
+    color: white;
+}
+.close_btn:hover{
+    background-color: rgb(48, 48, 27);
+}
+    
+
+
+#nav-items ul li{
+    
+    list-style-type: none;
+}
+    
+    /*landing Page Section*/
+
+#landing-page{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    background-image: url("./assets/images/WhatsApp_Image_2024-07-27_at_8.05.51_PM-removebg-preview-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 490px 700px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20% 5%;
+    
+  
+}
+.role-container{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.name-container span{
+    color: var(--FONT-COLOR);
+}
+.cv-btn{
+    margin-top: 30px;
+}
+.cv-btn-items{
+    border: 2px solid crimson;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-right: 20px;
+}
+.cv-btn-items:hover{
+    background-color: var(--FONT-COLOR);
+}
+.cv-btn-items a{
+    display: inline-block;
+    padding: 10px;
+    font-weight: 600;
+}
+
+/* tablet design*/
+
+@media only screen and (min-width: 734px) {
+    
+    h2{
+        font-size: 2.8rem;
+    }
+    #hamburger{
+        display: none !important; 
+    }
+
+    #nav-items{
+        position: static;
+       display: block !important; 
+       align-self: center;
+       height: auto;
+       width: auto;
+       background-color: rgb(0, 0, 0);
+        
+    }
+#nav-items a{
+    position: relative;
+    padding-bottom: 5px;
+    width: fit-content;
+    padding-top: 0;
+    color: white;
+    border-bottom: 0;
+}
+#nav-items a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: crimson;
+    width: 0px;
+    height: 2px
+}
+#nav-items a:hover::after{
+    width: 100%;
+    transition: 0.3s;
+} 
+#nav-items>ul>li{
+        display: inline;
+        color: white;
+        margin-right: 20px;
+        
+}
+#landing-page{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+    height: 100vh;
+    
+    background-image: url("./assets/images/WhatsApp_Image_2024-07-27_at_8.05.51_PM-removebg-preview-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 820px 760px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 15% 10%;
+
+ }
+ .role-container{
+    letter-spacing: 2px;
+}
+.name-container{
+    letter-spacing: 2px;
+}
+}
+
+/* desktop design*/
+
+
+@media only screen and (min-width: 992px){
+    #landing-page{
+        background-color: rgb(0, 0, 0);
+        background-position: bottom right;
+        background-size: 90% 700px;
+        padding-left: 10% ;
+        padding-bottom: 15%;
+    }
+    .role-container{
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+    .name-container > h2{
+        font-size: 2.5rem;
+    }
+}
+
+/* About Section*/
+
+    #about-section{
+        scroll-margin: var(--SCROLL-SIZE);
+        opacity: 0;
+        transform: translate(0,-20px);
+        padding: 40px 20px 0 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+    #image-container{
+        
+        width: 90%;
+        background-color: var(--SKILLS-BG-COLOR);
+        border-radius: 10px;
+        padding: 10px 10px 10px 0;
+        text-align: center;
+    }
+    #about-information{
+        width: 100%;
+    }
+    #about-description{
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    #specific-container{
+        margin: 30px 0;
+        display: flex;
+        gap: 10px;
+    }
+    .specific-items{
+        display: inline-block;
+        
+        
+    }
+
+    
+    .about-btn{
+        padding: 10px;
+        border: 1px solid crimson;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.5s;
+        
+    }
+    .about-btn:hover{
+        background-color: rgba(128, 128, 128, 0.742);
+    }
+    
+    .specific-list-container{
+        margin-left: 20px;
+        
+    }
+    .specific-list{
+        list-style-type: disc;
+        margin: 0 0 20px 0;
+    }
+    .flex-specific{
+        display: flex;
+        flex-wrap: wrap;
+        height: 120px;
+        overflow: hidden;
+    }
+    
+    .initial-opacity{
+        opacity: 0;
+        transform: translate(0, 0);
+
+       
+    }
+    .opacity-grow{
+       opacity: 1;
+       order: -1;
+       transform: translate(0, 5px);
+       transition: opacity 2s , transform 2s;
+       
+    }
+   
+
+    /* tablet Design */
+
+    @media only screen and (min-width: 734px){
+        #image-container{
+            align-self: center;
+            width: 60%;
+        }
+    }
+
+   /* laptop design */
+@media only screen and (min-width: 992px){
+    #image-container{
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    #about-information{
+        width: 65%;
+        margin-left: 20px;
+    }
+
+}
+
+/* skills Section */
+
+    #skills-section{
+        opacity: 0;
+        transform: translate(0,-10px);
+        padding: var(--SECTION-PADDING);
+        scroll-margin: var(--SCROLL-SIZE);
+    }
+    
+    #skills-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .skill-box{
+        background-color: var(--SKILLS-BG-COLOR);
+        width: 86%;
+        margin: 10px 0;
+        padding: 50px 20px;
+        border-radius: 10px;
+        transition: all 0.5s;
+        box-shadow: 2px 2px 5px rgb(255, 255, 255);
+        
+    }
+    .skill-box:hover{
+        background-color: var(--FONT-COLOR);
+        
+    }
+
+
+/* Desktop Design */
+
+@media only screen and (min-width: 992px){
+    #skills-container{
+        justify-content: space-between;
+    }
+    .skill-box{
+        width: 30%;
+    }
+}
+
+/* projects-section */
+
+/* mobile design */
+
+
+    #projects-section{
+        padding: var(--SECTION-PADDING);
+        scroll-margin: var(--SCROLL-SIZE);
+    }
+    #projects-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+       
+    }
+    .project-items{
+        width: 91%;
+        border: 2px solid var(--FONT-COLOR);
+        border-radius: 10px;
+        background-color: var(--SKILLS-BG-COLOR);
+        padding: 40px 20px 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        
+        
+    }
+    .project-items p{
+        margin-top: 20px;
+    }
+
+
+/* tablet design */
+
+@media only screen and (min-width: 734px){
+    .project-items{
+        width: 25%;
+    }
+}
+
+/* desktop design */
+
+@media only screen and (min-width: 992px){
+    #projects-container{
+        justify-content: space-around;
+    }
+    .project-items{
+        width: 25%;
+    }
+}
+
+/* contact section*/
+
+
+#contact-container{
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    scroll-margin: var(--SCROLL-SIZE);
+}
+#navigation-container{
+    width: 100%;
+}
+.social-text{
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-left: 10px;
+}
+.formal-links{
+    margin-top: 20px;
+}
+.formal-links i:hover{
+    color: var(--FONT-COLOR);
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons i{
+    margin-right: 20px;
+}
+.social-icons i:hover{
+    color: var(--FONT-COLOR);
+}
+.resume-container{
+    margin-top: 20px;
+}
+.resume-container button{
+    border: none;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: var(--FONT-COLOR);
+}
+
+.resume-btn{
+    padding: 0.5rem;
+    display: inline-block;
+}
+#form-container{
+    margin-top: 22px;
+    width: 100%;
+    
+}
+.input-items{
+    margin-top: 20px;
+}
+
+.input-box{
+    padding: 1rem;
+    background-color: var(--SKILLS-BG-COLOR);
+    border-bottom-left-radius: 10px;
+    border: none;
+    width: 90%;
+}
+.submit-btn{
+    border: none;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: var(--FONT-COLOR);
+    width: 40%;
+    color: white;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+
+
+
+/* Desktop Dedign */
+
+@media only screen and (min-width: 992px){
+    #contact-container{
+        justify-content: flex-start;
+        gap: 40px;
+       
+    }
+    .social-text{
+        font-size: 1rem;
+    }
+    #navigation-container{
+        width: max-content;
+    }
+    #form-container{
+        width: 50%;
+    }
+    .input-box{
+        width: 100%;
+    }
+}

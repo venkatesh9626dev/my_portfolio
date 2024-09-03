@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkatesh Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+   
+    
+   
+</head>
+
+<body>
+    <header>
+        <div  class="head-container" >
+            <h1> <a href="#landing-page">Venkatesh</a></h1>
+        </div>
+        <div id="hamburger" onclick="change_nav()">
+            
+                <i class="fa-solid fa-bars fa-lg"></i> 
+             
+          
+        </div>
+        <nav id="nav-items" class="nav-phone">
+            <ul>
+                <li>
+                    <a class="anchor-items" href="#landing-page">Home</a>
+                </li>
+                <li>
+                    <a class="anchor-items" href="#about-section">About</a>
+                </li>
+                <li>
+                    <a class="anchor-items" href="#skills-section">Skills</a>
+                </li>
+                <li>
+                    <a class="anchor-items" href="#projects-section">Projects</a>
+                </li>
+                <li>
+                    <a class="anchor-items" href="#contact-section">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section  id="landing-page">
+            <div class="brief-container">
+                <div class="role-container">
+                    <p>Aspiring Web Developer</p>
+                </div>
+                <div class="head-container-2 name-container">
+                    <h2>Hi, I'm <span>Venkatesh</span> <br> From Freshworks Academy</h2>
+                </div>
+                <div class="cv-btn">
+                    <button class="cv-btn-items">
+                        <a href="" >My Resume</a>
+                    </button>
+                    <button class="cv-btn-items">
+                        <a href="#contact-section">Contact Me</a>
+                    </button>
+                </div>
+               
+            </div>
+            
+        </section>
+        
+        <section id="about-section">
+            <div id="image-container">
+                <img  src="./assets/images/WhatsApp_Image_2024-08-08_at_5.44.39_PM-removebg-preview.png" width="100%" height="352px" alt="venkatesh_Photo" ">
+            </div>
+            <div id="about-information">
+                <div >
+                    <div class="head-container-3">
+                        <h2>About Me</h2>
+                    </div>
+                    <div id="about-description">
+                        <p>I'm an aspiring web developer studying at Freshworks , honing my skills to build innovative and effective web solutions with a background in computer science , I'm an aspiring Web Developer at Freshworks, focusing on coding , design and innovative solutions. I am dedicated to becoming a skilled problem solver, driven by a passion for addressing complex challenges and crafting innovative solutions. My approach involves a combination of analytical thinking, creativity, and perseverance. </p>
+                    </div>
+                </div>
+                <div id="scroll-container">
+                    <div id="navbar-2">
+                        <ul id="specific-container">
+                            <li class="specific-items">
+                                <button class=" about-btn" onclick="hobbies_function()"> My Hobbies</button>
+                            </li>
+                            <li class="specific-items">
+                                <button class=" about-btn" onclick="skills_function()"> My Skills</button>
+                            </li>
+                            <li class="specific-items">
+                                <button class=" about-btn" onclick="education_function()"> My Education</button>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="flex-specific">
+                        <div id="hobbies-container" class="initial-opacity">
+                            <ul class="specific-list-container">
+                                <li class="specific-list">Reading Books</li>
+                                <li class="specific-list">Watching Ted Talks</li>
+                                <li class="specific-list">Listening Music</li>
+                            </ul>
+                        </div>
+                        <div id="about_skills_container" class="initial-opacity">
+                            <ul class="specific-list-container">
+                                <li class="specific-list">Core Html</li>
+                                <li class="specific-list">Fundamental CSS</li>
+                                <li class="specific-list">Basic Javasript</li>
+                            </ul>
+                        </div>
+                        <div id="education-container" class="initial-opacity" >
+                            <ul class="specific-list-container">
+                                <li class="specific-list">1 to 10th Grade in Beschi School</li>
+                                <li class="specific-list">11 to 12th Grade in Govt School</li>
+                                <li class="specific-list">Currently in Freshworks Academy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="skills-section">
+            <div class="head-container" >
+                <h2>My Skills</h2>
+            </div>
+            <div id="skills-container">
+                <div class="skill-box">
+                    <img src="./assets/images/icons8-html-logo-48.png" alt="html logo" width="120px">
+                    <div class="definition-container"">
+                        <h3>HTML</h3>
+                        <p>HTML stands for Hyper Text Markup Language.</p>
+                        <p style="margin-top: 10px;">I can build HTML using Semantic Tags and Can write structured Code</p>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <img src="./assets/images/icons8-css-logo-48.png" alt="css logo" width="120px">
+                    <div class="definition-container">
+                        <h3>CSS</h3>
+                        <p>CSS is the language we use to style an HTML document.</p>
+                        <p style="margin-top: 10px;">I can make a plain HTML into Beautiful HTML by my CSS skills</p>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <img src="./assets/images/icons8-bootstrap-48.png" alt="bootstrap" width="120px">
+                    <div class="definition-container">
+                        <h3>BOOTSTRAP</h3>
+                        <p>Bootstrap is a free front-end framework for faster and easier web development.</p>
+                        <p style="margin-top: 10px;">I use Bootstrap to make my code more responsive according to Different Screen Sizes.</p>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </section >
+        <section id="projects-section">
+            <div class="head-container">
+                <h2>My Projects</h2>
+            </div>
+            <div id="projects-container">
+                <div class="project-items">
+                    <a href="">
+                        <img src="./assets/images/download (5).jpg" width="90%" height="320px" alt="Tourism-website" style="object-fit: cover; vertical-align: bottom; ">
+                    </a>
+                    <p>Tourism</p>
+                </div>
+                <div class="project-items">
+                    <a href="">
+                        <img src="./assets/images/download (5).jpg" width="90%px" height="320px" alt="Tourism-website" style="object-fit: cover; vertical-align: bottom;">
+                    </a>
+                    <p>Coming Soon...</p>
+                </div>
+                <div class="project-items">
+                    <a href="">
+                        <img src="./assets/images/download (5).jpg" width="90%" height="320px" alt="Tourism-website" style="object-fit: cover; vertical-align: bottom;">
+                    </a>
+                    <p>Coming Soon...</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <section id="contact-section">
+            
+            <div id="contact-container">
+                <div id="navigation-container">
+                    <div class="head-container">
+                        <h2>Contact Me</h2>
+                    </div>
+                    <div class="formal-links">
+                        <a href="mailto:developervenkatesh6@gmail.com">
+                            <i class="icons fa-solid fa-envelope"></i>
+                        </a>
+                        <p class="social-text">venkatesh.sivakumar@fssa.freshworks.com</p>
+                    </div>
+                    <div class="formal-links">
+                        <a href="https://github.com/venkatesh9626dev?tab=repositories">
+                            <i class="icons fa-brands fa-github"></i>
+                        </a>
+                        <p class="social-text">venkatesh9626dev</p>
+                    </div>
+                    <div class="social-icons">
+                       
+                       <a href="https://x.com/Venkatesh_dev_6">
+                        <i class="fa-brands fa-twitter"></i>
+                       </a>
+                       <a href="https://www.instagram.com/_techie_venkat/">
+                        <i class="fa-brands fa-instagram"></i>
+                       </a>
+                       <a href="https://www.linkedin.com/in/venkatesh-developer-251b7231b/">
+                        <i class="fa-brands fa-linkedin"></i>
+                       </a>
+                    </div>
+                    <div class="resume-container">
+                        <button>
+                            <a class="resume-btn" href="">Download Resume</a>
+                        </button>
+                    </div>
+                </div>
+                <div id="form-container">
+                    <form action="#">
+                        <div class="input-items">
+                            <input type="text" placeholder="Your Name" class="input-box">
+                        </div>
+                        <div class="input-items">
+                            <input type="email" placeholder="Your Email" class="input-box">
+                        </div>
+                        <div class="input-items">
+                            <textarea name="" id="" placeholder="Your Message" class=" input-box textarea-conti"></textarea>
+                        </div>
+                        <div class="input-items">
+                            <input type="submit" value="Submit" class="submit-btn">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="copyright-section">
+
+        </section>
+    </footer>
+
+
+    <script src="./pages/portfolio.js"></script>
+</body>
+</html>
