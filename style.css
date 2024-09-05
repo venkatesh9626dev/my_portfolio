@@ -121,7 +121,7 @@ header{
     /*landing Page Section*/
 
 #landing-page{
-    height: 100vh;
+    height: 100dvh;
     background-color: black;
     color: white;
     background-image: url("./assets/images/WhatsApp_Image_2024-07-27_at_8.05.51_PM-removebg-preview-removebg-preview.png");
