@@ -24,6 +24,9 @@ h2{
     font-size: 1.8rem;
     margin: 20px 0;
 }
+h3{
+    font-size: 2rem;
+}
 p{
     word-spacing: 10px;
 }
@@ -124,7 +127,7 @@ header{
     height: 100dvh;
     background-color: black;
     color: white;
-    background-image: url("./assets/images/WhatsApp_Image_2024-07-27_at_8.05.51_PM-removebg-preview-removebg-preview.png");
+    background-image: url("./assets/images/My_photo_img.jpg");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 490px 700px;
@@ -215,7 +218,7 @@ header{
 
     height: 100vh;
     
-    background-image: url("./assets/images/WhatsApp_Image_2024-07-27_at_8.05.51_PM-removebg-preview-removebg-preview.png");
+    background-image: url("./assets/images/My_photo_img.jpg");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 820px 760px;
@@ -271,9 +274,14 @@ header{
         width: 90%;
         background-color: var(--SKILLS-BG-COLOR);
         border-radius: 10px;
-        padding: 10px 10px 10px 0;
+        padding: 10px;
         text-align: center;
+        align-self: flex-start;
     }
+    #image-container h3{
+        margin: 20px;
+    }
+
     #about-information{
         width: 100%;
     }
@@ -341,7 +349,7 @@ header{
 
     @media only screen and (min-width: 734px){
         #image-container{
-            align-self: center;
+            
             width: 60%;
         }
     }
@@ -350,8 +358,7 @@ header{
 @media only screen and (min-width: 992px){
     #image-container{
         width: 30%;
-        display: flex;
-        align-items: center;
+        
     }
     #about-information{
         width: 65%;
