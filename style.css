@@ -523,6 +523,11 @@ header{
     border-bottom-left-radius: 10px;
     border: none;
     width: 90%;
+    color: white;
+}
+::placeholder{
+    color: white;
+    opacity: 0.8;
 }
 .submit-btn{
     border: none;

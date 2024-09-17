@@ -216,3 +216,13 @@ if(window_width >= 734){
 })
 }
 
+
+// collecting user data through form
+
+function userData(){
+    let userName = document.getElementById("userName").value;
+    let userMail = document.getElementById("userMail").value;
+    let userMessage = document.getElementById("userMessage").value;
+
+   
+}

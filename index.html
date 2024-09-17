@@ -219,21 +219,26 @@
                     </div>
                 </div>
                 <div id="form-container">
-                    <form action="#">
-                        <div class="input-items">
-                            <input type="text" placeholder="Your Name" class="input-box">
-                        </div>
-                        <div class="input-items">
-                            <input type="email" placeholder="Your Email" class="input-box">
-                        </div>
-                        <div class="input-items">
-                            <textarea name="" id="" placeholder="Your Message" class=" input-box textarea-conti"></textarea>
-                        </div>
-                        <div class="input-items">
-                            <input type="submit" value="Submit" class="submit-btn">
-                        </div>
-                        
+                    
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="e407397b-0e99-4194-b535-dc0fb1c3cad1">
+
+                    <div class="input-items">
+                        <input type="text" placeholder="Enter Your Name" class="input-box" id="userName" name="name">
+                    </div>
+                    <div class="input-items">
+                        <input type="email" placeholder="Enter Your Email" class="input-box" id="userMail" name="email">
+                    </div>
+                    <div class="input-items">
+                        <textarea   placeholder="Enter Your Message" class=" input-box " id="userMessage" name="message"></textarea>
+                    </div>
+
+                    <div class="input-items">
+                        <input type="submit" value="Submit" class="submit-btn" onclick="userData()" >
+                    </div>
                     </form>
+
                 </div>
             </div>
         </section>
@@ -241,6 +246,9 @@
 
         </section>
     </footer>
+
+
+    
 
 
     <script src="./pages/portfolio.js"></script>
