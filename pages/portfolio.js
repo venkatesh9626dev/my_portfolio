@@ -52,6 +52,22 @@ let hobbies = document.getElementById("hobbies-container")
 let skills = document.getElementById("about_skills_container")
 let education = document.getElementById("education-container")
 
+
+/* .initial-opacity{
+        opacity: 0;
+        transform: translate(0, 0);
+
+       
+    }
+    .opacity-grow{
+       opacity: 1;
+       order: -1;
+       transform: translate(0, 5px);
+       transition: opacity 2s , transform 2s;
+       
+    }
+       */
+
 function hobbies_function(){
 
     hobbies.classList.add("opacity-grow")
@@ -217,12 +233,4 @@ if(window_width >= 734){
 }
 
 
-// collecting user data through form
 
-function userData(){
-    let userName = document.getElementById("userName").value;
-    let userMail = document.getElementById("userMail").value;
-    let userMessage = document.getElementById("userMessage").value;
-
-   
-}
