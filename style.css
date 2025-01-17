@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 :root{
-    --FONT-COLOR:crimson; 
+    --FONT-COLOR:rgb(220, 30, 20); 
     --SKILLS-BG-COLOR :  rgba(128, 140, 152, 0.505);
     --SCROLL-SIZE : 80px;
     --SECTION-PADDING :0px 20px 20px 20px;
